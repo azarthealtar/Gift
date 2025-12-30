@@ -27,15 +27,11 @@ body{
     gap: min(40px, 4.6vw);
     margin-inline: auto;
     align-items: center;
-
-    border: 5px solid;
 }
 .side{
     display: flex;
     flex-direction: column;
-    gap: min(16px, 1.8vw);
-
-    border: 5px solid;
+    gap: min(64px, 7.2vw);
 }
 #paper_scroll{
     width: min(300px, 50vw);
@@ -46,18 +42,17 @@ body{
     width: min(120px, 14vw);
     height: min(220px, 25.6vw);
     border-radius: 12px;
+    border: 1px solid snow;
 }
 .scroll{
     position: relative;
-
-    border: 5px solid;
 }
 .scroll_text{
     position: absolute;
-    top: 20%;
+    top: 13%;
     left: 23%;
     right: 23%;
-    font-size: min(12px, 1.4vw);
+    font-size: min(18px, 2.1vw);
     text-align: center;
 }
 
