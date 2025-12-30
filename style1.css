@@ -54,7 +54,7 @@ body{
 }
 .scroll_text{
     position: absolute;
-    top: 5%;
+    top: 20%;
     left: 23%;
     right: 23%;
     font-size: min(12px, 1.4vw);
