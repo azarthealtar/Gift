@@ -1,0 +1,105 @@
+html, body{
+    height: 100%;
+}
+body{
+    min-height: 100vh;
+    min-height: 100dvh;
+    margin: 0;
+
+    background-image: url("Images/bgimage.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.paper-wrap{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .paper{
+  position: relative;
+} */
+.paper{
+    position: relative;
+    width: min(450px, 75vw);
+}
+/* #blankpaper{
+    width: min(450px, 75vw);
+    filter: brightness(80%) contrast(1.1);
+    display: block;
+    height: auto;
+} */
+#blankpaper{
+    width: 100%;
+    display: block;
+    height: auto;
+    filter: brightness(90%);
+}
+.paper-text{
+    position: absolute;
+
+    top: 15%;
+    left: 11.5%;
+    right: 19.5%;
+
+    font-size: min(13px, 2vw);
+    line-height: 1.5;
+    text-align: center;
+
+    color: rgba(0,0,0,0.9);
+    text-shadow: 0 1px 2px rgba(0,0,0,0.15);
+
+    opacity: 0.85;
+}
+
+
+
+.snow{
+    position: fixed;
+    z-index: 9999;
+}
+.snowflake{
+    position: absolute;
+    width: min(10px, 1.1vw);
+    opacity: 0.7;
+    top: 0%;
+    z-index: 9999;
+
+    animation: fall;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.f1{left: 12%; animation-duration: 6s;}
+.f2{left: 27%; animation-duration: 10s;}
+.f3{left: 41%; animation-duration: 8s;}
+.f4{left: 58%; animation-duration: 14s;}
+.f5{left: 63%; animation-duration: 7s;}
+.f6{left: 76%; animation-duration: 12s;}
+.f7{left: 84%; animation-duration: 5s;}
+.f8{left: 91%; animation-duration: 11s;}
+.f9{ left: 2%;  animation-duration: 9s; }
+.f10{ left: 98%; animation-duration: 13s; }
+
+.snowman{
+    width: min(100px, 11.6vw);
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    height: auto;
+    opacity: 0.8;
+}
+
+
+
+@keyframes fall{
+    from{ transform: translateY(0); }
+    to{ transform: translateY(99svh); }
+}
+@media(max-width: 768px){
+    body{
+        background-image: url("Images/bgimage_mobile.png");
+    }
+}
