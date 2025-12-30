@@ -4,6 +4,7 @@ body{
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
+    overflow-x: hidden;
 
     margin: 0;
     text-align: center;
@@ -18,6 +19,7 @@ body{
     align-items: flex-start;
     gap: 40px;
     margin-top: 60px;
+    max-width: 100vw;
 }
 .side{
     display: flex;
@@ -100,4 +102,20 @@ body{
 @keyframes fall{
     from{ transform: translateY(0); }
     to{ transform: translateY(110vh); }
+}
+@media (max-width: 768px) {
+
+    .side img {
+        width: 80px;   /* down from 120px */
+    }
+
+    #paper_scroll {
+        width: 70vw;
+    }
+
+    .stage {
+        gap: 20px;     /* reduce spacing */
+        overflow-x: auto;
+        padding: 0 16px;
+    }
 }
