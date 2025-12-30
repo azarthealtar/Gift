@@ -1,5 +1,5 @@
 html{
-    background: url("Images/bgimage.png") center / cover no-repeat;
+    background: #000 url("Images/bgimage.png") center / cover no-repeat;
 
 }
 body{
@@ -20,6 +20,8 @@ body{
     align-items: flex-start;
     gap: 40px;
     margin-top: 60px;
+    position: relative; 
+    z-index: 10;
 }
 .side{
     display: flex;
@@ -67,7 +69,12 @@ body{
 
 .snow{
     position: fixed;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 5;
 }
+
 .snowflake{
     position: absolute;
     width: 10px;
@@ -114,4 +121,16 @@ body{
 
 @media (min-width: 900px){
   html{ background-attachment: fixed; }
+}
+@media (max-width: 768px){
+  .stage{
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  .side{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
