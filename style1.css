@@ -1,0 +1,31 @@
+.stage{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+.side{
+    display: flex;
+    flex-direction: column;
+}
+
+#paper_scroll{
+    width: min(300px, 35vw);
+    transform: rotateY(180deg);
+    filter: brightness(75%) contrast(1.1);
+}
+.side img{
+    width: min(120px, 14vw);
+    height: min(220px, 25.6vw);
+    border-radius: 12px;
+}
+
+.scroll{
+    position: relative;
+}
+.scroll_text{
+    position: absolute;
+    top: 50%;
+    /* left: 50%; */
+    transform: translate(-50%, -50%);
+}
