@@ -60,6 +60,9 @@ body{
 #next_page{
     text-decoration: none;
 }
+#next_page:link{
+    color: rgb(10, 10, 10);
+}
 #next_page:visited{
     color: rgb(10, 10, 10);
 }
@@ -111,7 +114,7 @@ body{
 
 @keyframes fall{
     from{ transform: translateY(0); }
-    to{ transform: translateY(99vh); }
+    to{ transform: translateY(95vh); }
 }
 @media(max-width: 768px){
     body{
