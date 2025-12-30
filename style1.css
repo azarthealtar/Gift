@@ -15,6 +15,7 @@ body{
 .stage-wrap{
     display: flex;
     justify-content: center;
+    padding-top: min(100px, 11.6vw);
 }
 .stage{
     display: flex;
@@ -23,24 +24,26 @@ body{
     overflow-x: auto;
     gap: min(40px, 4.6vw);
     margin-inline: auto;
+    align-items: center;
 
     border: 5px solid;
 }
 .side{
     display: flex;
     flex-direction: column;
-    gap: min(16px, 1.8vw);
+    /* gap: min(30px, 3.5vw); */
+    gap: 100px;
 
     border: 5px solid;
 }
 #paper_scroll{
-    width: min(300px, 35vw);
+    width: min(500px, 58.3vw);
     transform: rotateY(180deg);
     filter: brightness(75%) contrast(1.1);
 }
 .side img{
-    width: min(120px, 14vw);
-    height: min(220px, 25.6vw);
+    width: min(130px, 15.1vw);
+    height: min(240px, 28vw);
     border-radius: 12px;
 }
 .scroll{
@@ -57,6 +60,6 @@ body{
 }
 @media(max-width: 768px){
     body{
-        background-image: url("Images/bgimage_mobile.png");
+        background-image: url("Images/bgimage_mobile.jpg");
     }
 }
