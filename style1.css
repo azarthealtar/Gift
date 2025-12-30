@@ -12,6 +12,8 @@ body{
     background-repeat: no-repeat;
 }
 
+
+
 .stage-wrap{
     display: flex;
     justify-content: center;
@@ -39,6 +41,7 @@ body{
     width: min(300px, 35vw);
     transform: rotateY(180deg);
     filter: brightness(75%) contrast(1.1);
+    height: 400px;
 }
 .side img{
     width: min(120px, 14vw);
@@ -52,11 +55,24 @@ body{
 }
 .scroll_text{
     position: absolute;
-    top: 10%;
+    top: 5%;
     left: 23%;
     right: 23%;
     font-size: min(12px, 1.4vw);
+    text-align: center;
 }
+
+
+
+.snowman{
+    width: 100px;
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    height: auto;
+}
+
+
 @media(max-width: 768px){
     body{
         background-image: url("Images/bgimage_mobile.png");
