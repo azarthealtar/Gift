@@ -22,10 +22,12 @@
 
 .scroll{
     position: relative;
+    border: 5px solid;
 }
 .scroll_text{
     position: absolute;
-    top: 50%;
-    /* left: 50%; */
-    transform: translate(-50%, -50%);
+    top: 10%;
+    left: 23%;
+    right: 23%;
+    font-size: 12px;
 }
