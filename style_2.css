@@ -14,7 +14,7 @@ body{
 
 
 .paper-wrap{
-    min-height: 100vh;
+    min-height: 99svh;
     display: flex;
     justify-content: center;
     align-items: center;
