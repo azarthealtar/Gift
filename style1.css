@@ -1,26 +1,37 @@
+html, body{
+    height: 100%;
+}
+body{
+    min-height: 100vh;
+    margin: 0;
+
+    background-image: url("Images/bgimage.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .stage-wrap{
     display: flex;
     justify-content: center;
 }
-
 .stage{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     overflow-x: auto;
     gap: min(40px, 4.6vw);
-
     margin-inline: auto;
+
     border: 5px solid;
 }
 .side{
     display: flex;
     flex-direction: column;
-
     gap: min(16px, 1.8vw);
+
     border: 5px solid;
 }
-
 #paper_scroll{
     width: min(300px, 35vw);
     transform: rotateY(180deg);
@@ -33,6 +44,7 @@
 }
 .scroll{
     position: relative;
+
     border: 5px solid;
 }
 .scroll_text{
