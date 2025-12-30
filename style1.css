@@ -38,7 +38,7 @@ body{
     border: 5px solid;
 }
 #paper_scroll{
-    width: min(300px, 35vw);
+    width: min(300px, 50vw);
     transform: rotateY(180deg);
     filter: brightness(75%) contrast(1.1);
 }
