@@ -54,6 +54,20 @@ body{
     right: 23%;
     font-size: min(14px, 2.1vw);
     text-align: center;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.25);
+    opacity: 0.85;
+}
+#next_page{
+    text-decoration: none;
+}
+#next_page:visited{
+    color: rgb(10, 10, 10);
+}
+#next_page:hover{
+    color: rgb(30, 30, 30);
+}
+#next_page:active{
+    color: rgb(60, 60, 60);
 }
 
 
