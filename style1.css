@@ -54,3 +54,8 @@ body{
     right: 23%;
     font-size: min(12px, 1.4vw);
 }
+@media(max-width: 768px){
+    body{
+        background-image: url("Images/bgimage_mobile.jpg");
+    }
+}
