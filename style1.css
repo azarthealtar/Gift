@@ -41,7 +41,6 @@ body{
     width: min(300px, 35vw);
     transform: rotateY(180deg);
     filter: brightness(75%) contrast(1.1);
-    height: 400px;
 }
 .side img{
     width: min(120px, 14vw);
