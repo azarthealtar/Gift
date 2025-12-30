@@ -1,13 +1,11 @@
 html{
-  min-height: 100%;
-  background: #000 url("Images/bgimage.png") center / cover no-repeat;
-}
+    background: url("Images/bgimage.png") center / cover no-repeat;
 
+}
 body{
     /* background-image: url(Images/bgimage.png);
-    background-repeat: no-repeat; */
-    /* background-attachment: fixed; */
-    /* background-position: center;
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover; */
 
     margin: 0;
@@ -111,22 +109,9 @@ body{
     to{ transform: translateY(110vh); }
   }
 }
-@media (max-width: 768px){
-  .stage{
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-  }
 
-  .side{
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-  }
 
-  .side img{
-    width: 90px;
-    height: 90px;
-  }
+
+@media (min-width: 900px){
+  html{ background-attachment: fixed; }
 }
