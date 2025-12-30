@@ -56,6 +56,6 @@ body{
 }
 @media(max-width: 768px){
     body{
-        background-image: url("Images/bgimage_mobile.jpg");
+        background-image: url("Images/bgimage_mobile.png");
     }
 }
