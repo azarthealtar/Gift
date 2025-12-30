@@ -1,0 +1,108 @@
+body{
+    background-image: url(Images/bgimage.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+    margin: 0;
+    text-align: center;
+}
+
+
+
+.stage{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    margin-top: 60px;
+}
+.side{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.side img{
+  width: 120px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+
+
+.scroll{
+    border: 10px solid dodgerblue;
+
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    color: #1f130a;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.45);
+    margin-top: 10%;
+    
+}
+#paper_scroll{
+    border: 5px solid;
+
+    display: block;
+    transform: rotateY(180deg);
+    width: min(300px, 86vh);
+    height: auto;
+    filter: brightness(75%) contrast(1.1);
+}
+.scroll_text{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    right: 20%;
+    bottom: 20%;
+}
+
+
+
+.snow{
+    position: fixed;
+}
+.snowflake{
+    position: absolute;
+    width: 10px;
+    opacity: 0.7;
+    top: 0%;
+
+    animation: fall;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+/* .f1{left: 12%; animation-duration: 6s; animation-delay: 1s;}
+.f2{left: 27%; animation-duration: 10s; animation-delay: 4s;}
+.f3{left: 41%; animation-duration: 8s; animation-delay: 2s;}
+.f4{left: 58%; animation-duration: 14s; animation-delay: 9s;}
+.f5{left: 63%; animation-duration: 7s; animation-delay: 3s;}
+.f6{left: 76%; animation-duration: 12s; animation-delay: 6s;}
+.f7{left: 84%; animation-duration: 5s; animation-delay: 1s;}
+.f8{left: 91%; animation-duration: 11s; animation-delay: 7s;} */
+
+.f1{left: 12%; animation-duration: 6s;}
+.f2{left: 27%; animation-duration: 10s;}
+.f3{left: 41%; animation-duration: 8s;}
+.f4{left: 58%; animation-duration: 14s;}
+.f5{left: 63%; animation-duration: 7s;}
+.f6{left: 76%; animation-duration: 12s;}
+.f7{left: 84%; animation-duration: 5s;}
+.f8{left: 91%; animation-duration: 11s;}
+
+
+
+@keyframes fall{
+    from{ transform: translateY(0); }
+    to{ transform: translateY(110vh); }
+}
+@supports not (height: 100dvh){
+  @keyframes fall{
+    from{ transform: translateY(0); }
+    to{ transform: translateY(110vh); }
+  }
+}
