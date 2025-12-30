@@ -17,7 +17,7 @@ body{
 .stage-wrap{
     display: flex;
     justify-content: center;
-    padding-top: min(100px, 11.6vw);
+    padding-top: min(200px, 23.2vw);
 }
 .stage{
     display: flex;
