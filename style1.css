@@ -35,5 +35,5 @@
     top: 10%;
     left: 23%;
     right: 23%;
-    font-size: 12px;
+    font-size: min(12px, 1.4vw);
 }
