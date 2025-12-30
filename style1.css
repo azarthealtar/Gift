@@ -3,10 +3,16 @@
     flex-direction: row;
     flex-wrap: nowrap;
     overflow-x: auto;
+
+    gap: min(40px, 4.6vw);
+    border: 5px solid;
 }
 .side{
     display: flex;
     flex-direction: column;
+
+    gap: min(16px, 1.8vw);
+    border: 5px solid;
 }
 
 #paper_scroll{
