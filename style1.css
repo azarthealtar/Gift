@@ -42,7 +42,7 @@ body{
     width: min(120px, 14vw);
     height: min(220px, 25.6vw);
     border-radius: 12px;
-    border: 1px solid snow;
+    border: 3px solid snow;
 }
 .scroll{
     position: relative;
@@ -52,7 +52,8 @@ body{
     top: 13%;
     left: 23%;
     right: 23%;
-    font-size: min(18px, 2.1vw);
+    /* font-size: min(18px, 2.1vw); */
+    font-size: min(14px, 2.1vw);
     text-align: center;
 }
 
